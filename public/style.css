@@ -1,0 +1,240 @@
+body{
+    font-family: "Times New Roman",  serif;
+    background-image: url("2019.03.13-Rectorat-Drept-028.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-size: 15pt;
+    overflow-x: hidden; 
+}
+/*utilizator, iesire, */
+header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 98%;
+    width: 20%;
+    display: block;
+}
+.afara{
+    display: block;
+    position: absolute;
+    left: 38%;
+}
+.name{
+    display: block;
+    position: relative;
+    top: 12%;
+}
+.numeNou{
+    display: block;
+    position: relative;
+    left: 13%;
+    top: 13%;
+}
+.NumeleTauAici{
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 10%;
+}
+
+/*casetele, ora de acum, titlu, identari la scris etc, sa arate frumos cand dai click */
+
+
+.title{
+    font-family:  'Helvetica', serif;
+    font-size: 4em;
+    text-align: center;
+    color:white;
+}
+.time {
+    position:absolute;
+    right:80px;
+    top:25px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3em;
+    color:white;
+    margin:0px;
+    padding:0;
+    text-align:center;
+}
+
+h2{
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.totul{
+    position: relative;
+    display: grid;
+}
+
+select{
+    color: #515251;
+    background-color: rgb(255, 236, 233); 
+}
+input{
+    color: #515251;
+    background-color: rgb(255, 236, 233); 
+}
+button{
+    color: #515251;
+    background-color: rgb(255, 236, 233); 
+    cursor: pointer;
+}
+/*adauga in program */
+
+.adauga{
+    background-color: #9370DB;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+
+.adaugaOraZiuaText{
+    display: grid;
+    grid-template-columns: 35% 45%;
+    grid-column-gap: 10%;
+    grid-row-gap: 5%;
+    margin: 3%;
+}
+.scriStanga{
+    display: block;
+    margin-left: 20%;
+}
+
+.dreapta{
+    text-decoration: none;
+    justify-self: start;
+}
+.butonJos {
+    display: block;
+    justify-self: start;
+    margin-left: 20%;
+    margin-top: 7%;
+    width:323px;
+}
+
+/* culori pt casete*/
+
+
+.Monday{
+    background-color: #6495ED;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Wednesday{
+    background-color: #6495ED;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Friday{
+    background-color: #6495ED;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Tuesday{
+    background-color: #6495ED;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Thursday{
+    background-color: #6495ED;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Saturday{
+    background-color: #D2691E;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.Sunday{
+    background-color: #D2691E;
+    display: block;
+    box-shadow: inset 0px 0px 7px 2px #E6E6FA;
+}
+.linieAct{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-bottom: 2%;
+}
+.ore{
+    justify-self: center;
+}
+.edit{
+    grid-column-start: 2;
+}
+.editInput{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+
+
+/* media queries*/
+
+@media (min-width: 1280px) {
+    
+    .totul{
+        grid-template-columns: repeat(2, 1fr);
+    	grid-gap:10px;
+    }
+}
+@media (max-width: 1280px)
+{
+    .totul{
+    	grid-gap:10px;
+    }
+    body{
+        font-size: 12.5pt;
+    }
+    .time{
+        top: 110px;
+    }
+}
+@media (max-width: 768px){
+
+    body{
+        font-size: 11pt;
+    }
+
+    header{
+        position: absolute;
+        width: 100%;
+        height: 35px;
+        top: 0%;
+    }
+    .inputNume{
+        width: 35%;
+    }
+
+    .NumeleTauAici{
+        position: absolute;
+        font-size: 1.3em;
+        text-align: left;
+        display: inline-block;
+        left: 5%;
+        top: 2%;
+    }
+    .linieAct{
+        grid-template-columns: 20% 50% 30%;
+    }
+    .title{
+        font-size: 2.8em;
+    }
+    .numeNou{
+        display: inline-block;
+        position: absolute;
+        left: 70%;
+    }
+    .time{
+        right: 6%;
+        top: 80px;
+    }
+}

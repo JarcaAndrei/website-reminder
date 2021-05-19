@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f2dcd945c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Program</title>
+</head>
+<body>
+    <header></header>
+    <h1 id ='title' class="title">Program</h1><br>
+    <time id ="time" class="time"></time><br>
+    <div class="totul">
+          <div class = 'adauga'>
+                <h2>Adauga in program</h2>
+                <div>
+                    <div class = "adaugaOraZiuaText">
+                        <label for="zi" class='scriStanga'>Ziua</label>
+                        <select id="zi" class='dreapta' required>
+                        <option value="monday" >Luni</option>
+                        <option value="tuesday">Marti</option>
+                        <option value="wednesday">Miercuri</option>
+                        <option value="thursday">Joi</option>
+                        <option value="friday">Vineri</option>
+			<option value="saturday">Sambata</option>
+                        <option value="sunday">Duminica</option><section class='Monday'>
+                        </select>
+                </div>
+                    <div class = "adaugaOraZiuaText">
+                        <label class='scriStanga'>Ora</label>
+                        <input type="time" id="ora" class="dreapta" required>
+                    </div>
+                    <div class = "adaugaOraZiuaText">
+                        <label class='scriStanga'>Text</label>
+                        <input type="text" id="text" class="dreapta" required>
+                        <button type="button" id="butonJos" class="butonJos"> Adauga in program </button>
+                    </div>
+                </div>
+            </div>  
+
+            <section class="Monday">
+                <h2>Luni</h2>
+                <div id = "monday"></div>
+            </section>
+
+            <section class="Tuesday">
+                <h2>Marti</h2>
+                <div id = "tuesday"></div>
+            </section>
+
+            <section class="Wednesday">
+                <h2>Miercuri</h2>
+                <div id = "wednesday"></div>
+            </section>
+
+            <section class='Thursday'> 
+                <h2>Joi</h2>
+                <div id = "thursday"></div>
+            </section>
+
+            <section class="Friday">
+                <h2>Vineri</h2>
+                <div id = "friday"></div>
+            </section>
+
+             <section class="Saturday">
+                <h2>Sambata</h2>
+                <div id = "saturday"></div>
+            </section>
+
+            <section class="Sunday">
+                <h2>Duminica</h2>
+                <div id = "sunday"></div>
+            </section>
+            
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
